@@ -1,4 +1,5 @@
 import React from "react";
+import { House, User, Code, Briefcase, Chats } from "phosphor-react"
 
 import * as S from "./styles"
 
@@ -6,23 +7,38 @@ const Aside = ({ setPage }) => {
   return (
     <S.Aside>
       <nav>
-        <ul>
+        <S.Ul>
           <li>
-            <button onClick={() => setPage("home")}>Home</button>
+            <S.Button onClick={() => setPage("home")}>
+              <House weight="fill" />
+              Home
+            </S.Button>
           </li>
           <li>
-            <button onClick={() => setPage("about")}>Sobre</button>
+            <S.Button onClick={() => setPage("about")}>
+              <User weight="fill" />
+              Sobre
+            </S.Button>
           </li>
           <li>
-            <button onClick={() => setPage("skills")}>Skills</button>
+            <S.Button onClick={() => setPage("skills")}>
+              <Code weight="fill" />
+              Skills
+            </S.Button>
           </li>
           <li>
-            <button onClick={() => setPage("projects")}>Projetos</button>
+            <S.Button onClick={() => setPage("projects")}>
+              <Briefcase weight="fill" />
+              Projetos
+            </S.Button>
           </li>
           <li>
-            <button onClick={() => setPage("contact")}>Contato</button>
+            <S.Button onClick={() => setPage("contact")}>
+              <Chats weight="fill" />
+              Contato
+            </S.Button>
           </li>
-        </ul>
+        </S.Ul>
       </nav>
     </S.Aside>
   );
