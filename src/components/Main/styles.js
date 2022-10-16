@@ -6,10 +6,9 @@ export const Main = styled.main`
 `
 
 export const Section = styled.section`
-    width: 75%;
+    width: 80%;
     position: absolute;
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    background: black;
 `

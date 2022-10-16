@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Aside = styled.aside`
-    width: 25%;
+    width: 20%;
     height: 100vh;
     display: flex;
     flex-direction: column;
