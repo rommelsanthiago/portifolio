@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 import { 
   House, 
   User, 
@@ -16,8 +17,11 @@ import {
 
 import * as S from "./styles"
 import Avatar from "../../assets/images/perfil.png";
+import { goToAbout, goToContact, goToHome, goToProjects, goToSkills } from "../../Routes/coordinator";
 
-const Aside = ({ setPage }) => {
+const Aside = () => {
+  const navigate = useNavigate()
+
   return (
     <S.Aside>
       <S.Img src={Avatar} alt="Rommel Santhiago" />
@@ -25,32 +29,32 @@ const Aside = ({ setPage }) => {
         <S.Ul>
           <li>
             <S.Button 
-              onClick={() => setPage("home")}
+                onClick={() => goToHome(navigate)}
             >
               <House weight="fill" />
               Home
             </S.Button>
           </li>
           <li>
-            <S.Button onClick={() => setPage("about")}>
+            <S.Button onClick={() => goToAbout(navigate)}>
               <User weight="fill" />
               Sobre
             </S.Button>
           </li>
           <li>
-            <S.Button onClick={() => setPage("skills")}>
+            <S.Button onClick={() => goToSkills(navigate)}>
               <Code weight="fill" />
               Skills
             </S.Button>
           </li>
           <li>
-            <S.Button onClick={() => setPage("projects")}>
+            <S.Button onClick={() => goToProjects(navigate)}>
               <Briefcase weight="fill" />
               Projetos
             </S.Button>
           </li>
           <li>
-            <S.Button onClick={() => setPage("contact")}>
+            <S.Button onClick={() => goToContact(navigate)}>
               <Chats weight="fill" />
               Contato
             </S.Button>

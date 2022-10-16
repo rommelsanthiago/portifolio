@@ -9,4 +9,7 @@ export const Section = styled.section`
     width: 75%;
     position: absolute;
     right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: black;
 `

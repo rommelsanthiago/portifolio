@@ -14,7 +14,7 @@ export const Aside = styled.aside`
 `
 
 export const Img = styled.img`
-    max-width: 70%;
+    max-width: 12rem;
     filter: drop-shadow(1px 1px 2px green)
         drop-shadow(-1px -1px 2px green)
 `
@@ -56,7 +56,7 @@ export const Social = styled.div`
     width: 80%;
     display: flex;
     justify-content: space-around;
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     svg {
         color: black;

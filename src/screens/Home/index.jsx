@@ -1,8 +1,10 @@
 import React from 'react';
 
+import * as S from './styles'
+
 const Home = () => {
   return (
-    <>
+    <S.Container>
       <h1>Home</h1>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor,
@@ -104,7 +106,7 @@ const Home = () => {
       tempor risus id, ornare dolor. Nullam in nunc velit. Generated 5
       paragraphs, 503 words, 3352 bytes of Lorem Ipsum
       </p>
-    </>
+    </S.Container>
   );
 };
 
