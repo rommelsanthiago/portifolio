@@ -17,3 +17,7 @@ export const goToProjects = (navigate) => {
 export const goToContact = (navigate) => {
     navigate('/contato')
 }
+
+export const goToCv = (navigate) => {
+    navigate('/curriculo')
+}

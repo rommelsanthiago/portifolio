@@ -17,8 +17,9 @@ const slideSection = keyframes`
 
 export const Container = styled.main`
   padding: 2rem 3rem;
+  transition: all 0.3s ease;
+  animation: ${slideSection} 1.5s forwards;
   margin: 0 1rem;
-  animation: ${slideSection} 0.8s forwards;
 
   h3{
     max-width: 450px;

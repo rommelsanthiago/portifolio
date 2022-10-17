@@ -7,6 +7,7 @@ import About from '../screens/About';
 import Skills from '../screens/Skills';
 import Projects from '../screens/Projects';
 import Contact from '../screens/Contact';
+import CV from '../assets/RommelSanthiago.pdf'
 
 const Routers = () => (
     <TransitionGroup component={null} >
@@ -21,6 +22,7 @@ const Routers = () => (
                 <Route path='skills' element={ <Skills /> } />
                 <Route path='projetos' element={ <Projects /> } />
                 <Route path='contato' element={ <Contact /> } />
+                <Route path='curriculo' element={CV} />
             </Routes>
         </CSSTransition>
     </TransitionGroup>

@@ -1,113 +1,121 @@
 import React from "react";
+import { FilePdf } from "phosphor-react";
 
-import * as S from "./styles"
+import * as S from "./styles";
+import CV from "../../assets/RommelSanthiago.pdf";
 
 const About = () => {
+  const onGetCv = () => {
+    fetch(CV).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "RommelSanthiago.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <S.Container>
-        <h1>Sobre</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor,
-          tellus non lobortis dictum, purus dui interdum nulla, a volutpat odio
-          tellus vitae magna. Nunc non ultrices nisl, nec hendrerit lorem. Proin
-          vulputate diam in volutpat suscipit. Nunc imperdiet scelerisque dui,
-          eget sagittis metus congue vel. Morbi condimentum arcu ac ante
-          scelerisque, quis dapibus orci laoreet. Quisque consequat porta dictum.
-          Donec pharetra metus ut nibh accumsan eleifend. Duis scelerisque
-          imperdiet justo, ac placerat felis pulvinar vel. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia curae;
-          Quisque eu elit vel nisi tempus fermentum id eget neque. In ultrices,
-          lacus quis vulputate aliquet, nulla felis condimentum quam, quis mollis
-          nibh lacus eget velit. Sed sit amet nunc vel ipsum mollis ultrices. Cras
-          consequat, dolor id pellentesque euismod, nulla dolor mattis risus, at
-          tristique lacus ipsum eget risus. Quisque euismod commodo neque id
-          posuere. Donec vitae eros non neque vulputate pellentesque. Fusce eu
-          consectetur augue, quis pulvinar sem. Vivamus ac turpis fermentum,
-          imperdiet quam non, dapibus leo. Orci varius natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Integer eu urna urna.
-          Nulla rutrum nibh eu quam ultrices condimentum. Cras bibendum id mi quis
-          lobortis. Etiam viverra gravida tellus eget sollicitudin. Pellentesque
-          vitae mauris vel lectus posuere dictum et in urna. Sed cursus ligula
-          scelerisque, vestibulum justo et, euismod nulla. Proin consequat, leo a
-          tincidunt condimentum, tortor odio dapibus turpis, eget aliquet nulla
-          risus vel ipsum. Ut tristique orci id ipsum auctor vulputate. Praesent
-          porta aliquet sem eu malesuada. Sed malesuada magna vitae sapien
-          commodo, facilisis congue ex rutrum. Etiam gravida ultrices nunc, quis
-          pharetra enim faucibus id. Integer varius ullamcorper tincidunt. Sed non
-          elit at lectus laoreet auctor. Ut a quam at neque cursus efficitur.
-          Vivamus blandit purus vel quam placerat ultricies. Pellentesque pulvinar
-          lorem vel felis ornare, ut varius ipsum posuere. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Curabitur in ligula feugiat,
-          dignissim enim et, tincidunt quam. Fusce in cursus libero. Integer quis
-          hendrerit purus, ut sodales ligula. Sed rutrum, nibh id dictum suscipit,
-          nunc lorem elementum turpis, at eleifend libero urna ut nisi. Nunc
-          tincidunt varius elit, in viverra mauris laoreet at. Phasellus tempor
-          ultricies ipsum mattis tempus. Proin ut tincidunt odio. Nam nec eros in
-          magna laoreet venenatis vitae eu ligula. Maecenas sed diam at elit
-          lacinia blandit. Donec quam erat, luctus ut vehicula sit amet, molestie
-          eu tellus. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. Ut laoreet aliquet risus vitae
-          lobortis. Nunc tristique sem sed lectus ultricies, et luctus diam
-          sollicitudin. Nunc et nisi at leo faucibus semper sed eget erat.
-          Praesent bibendum dolor non lacus varius gravida. Nulla pharetra, ipsum
-          vitae pellentesque suscipit, orci velit sodales ante, in blandit lacus
-          metus et orci. Aliquam faucibus elit at mi suscipit, at consectetur
-          velit molestie. Mauris sed metus odio. Integer facilisis, nulla accumsan
-          pulvinar aliquam, est augue luctus elit, quis interdum lorem leo eu
-          diam. Sed nec mi semper, tempor risus id, ornare dolor. Nullam in nunc
-          velit. Generated 5 paragraphs, 503 words, 3352 bytes of Lorem Ipsum
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor,
-          tellus non lobortis dictum, purus dui interdum nulla, a volutpat odio
-          tellus vitae magna. Nunc non ultrices nisl, nec hendrerit lorem. Proin
-          vulputate diam in volutpat suscipit. Nunc imperdiet scelerisque dui,
-          eget sagittis metus congue vel. Morbi condimentum arcu ac ante
-          scelerisque, quis dapibus orci laoreet. Quisque consequat porta dictum.
-          Donec pharetra metus ut nibh accumsan eleifend. Duis scelerisque
-          imperdiet justo, ac placerat felis pulvinar vel. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia curae;
-          Quisque eu elit vel nisi tempus fermentum id eget neque. In ultrices,
-          lacus quis vulputate aliquet, nulla felis condimentum quam, quis mollis
-          nibh lacus eget velit. Sed sit amet nunc vel ipsum mollis ultrices. Cras
-          consequat, dolor id pellentesque euismod, nulla dolor mattis risus, at
-          tristique lacus ipsum eget risus. Quisque euismod commodo neque id
-          posuere. Donec vitae eros non neque vulputate pellentesque. Fusce eu
-          consectetur augue, quis pulvinar sem. Vivamus ac turpis fermentum,
-          imperdiet quam non, dapibus leo. Orci varius natoque penatibus et magnis
-          dis parturient montes, nascetur ridiculus mus. Integer eu urna urna.
-          Nulla rutrum nibh eu quam ultrices condimentum. Cras bibendum id mi quis
-          lobortis. Etiam viverra gravida tellus eget sollicitudin. Pellentesque
-          vitae mauris vel lectus posuere dictum et in urna. Sed cursus ligula
-          scelerisque, vestibulum justo et, euismod nulla. Proin consequat, leo a
-          tincidunt condimentum, tortor odio dapibus turpis, eget aliquet nulla
-          risus vel ipsum. Ut tristique orci id ipsum auctor vulputate. Praesent
-          porta aliquet sem eu malesuada. Sed malesuada magna vitae sapien
-          commodo, facilisis congue ex rutrum. Etiam gravida ultrices nunc, quis
-          pharetra enim faucibus id. Integer varius ullamcorper tincidunt. Sed non
-          elit at lectus laoreet auctor. Ut a quam at neque cursus efficitur.
-          Vivamus blandit purus vel quam placerat ultricies. Pellentesque pulvinar
-          lorem vel felis ornare, ut varius ipsum posuere. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Curabitur in ligula feugiat,
-          dignissim enim et, tincidunt quam. Fusce in cursus libero. Integer quis
-          hendrerit purus, ut sodales ligula. Sed rutrum, nibh id dictum suscipit,
-          nunc lorem elementum turpis, at eleifend libero urna ut nisi. Nunc
-          tincidunt varius elit, in viverra mauris laoreet at. Phasellus tempor
-          ultricies ipsum mattis tempus. Proin ut tincidunt odio. Nam nec eros in
-          magna laoreet venenatis vitae eu ligula. Maecenas sed diam at elit
-          lacinia blandit. Donec quam erat, luctus ut vehicula sit amet, molestie
-          eu tellus. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. Ut laoreet aliquet risus vitae
-          lobortis. Nunc tristique sem sed lectus ultricies, et luctus diam
-          sollicitudin. Nunc et nisi at leo faucibus semper sed eget erat.
-          Praesent bibendum dolor non lacus varius gravida. Nulla pharetra, ipsum
-          vitae pellentesque suscipit, orci velit sodales ante, in blandit lacus
-          metus et orci. Aliquam faucibus elit at mi suscipit, at consectetur
-          velit molestie. Mauris sed metus odio. Integer facilisis, nulla accumsan
-          pulvinar aliquam, est augue luctus elit, quis interdum lorem leo eu
-          diam. Sed nec mi semper, tempor risus id, ornare dolor. Nullam in nunc
-          velit. Generated 5 paragraphs, 503 words, 3352 bytes of Lorem Ipsum
-        </p>
+      <h1>Sobre</h1>
+      <h2>Sou Rommel Santhiago Desenvolvedor Web Full Stack</h2>
+      <p>
+        Sou apaixonado por programação, com foco em desenvolvimento Web. Estou
+        sempre aprimorando meus conhecimentos para desenvolver softwares de
+        qualidade que façam sentido e diferença na vida das pessoas.
+      </p>
+      <S.Section>
+        <section>
+          <h2>Formação</h2>
+          <S.Timeline>
+            <S.Entry>
+              <span>
+                <h3>Logica de programação</h3>
+                <h4>Alura - 70h</h4>
+                <p>Dezembro de 2019</p>
+                <p>Março de 2020</p>
+              </span>
+              <S.Description>
+                Desenvolvi capacidades de lógica de programação independente da
+                linguagem a ser escolhida
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
+                <h3>Front-end</h3>
+                <h4>Alura - 100h</h4>
+                <p>Fevereiro de 2020</p>
+                <p>Março de 2020</p>
+              </span>
+              <S.Description>
+                Curso de desenvolvimento web com as pricipais tecnologias do
+                front-end, HTML, Javascript e CSS
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
+                <h3>Java</h3>
+                <h4>Alura - 120h</h4>
+                <p>Março de 2020</p>
+                <p>Maio de 2020</p>
+              </span>
+              <S.Description>
+                Curso de JAVA, onde apredi os principios do desenvolvimento na
+                linguagem com boas práticas e testes
+              </S.Description>
+            </S.Entry>
+          </S.Timeline>
+        </section>
+        <section>
+          <h2>Bootcamp</h2>
+          <S.Timeline>
+            <S.Entry>
+              <span>
+                <h3>Dev Web FullStack</h3>
+                <h4>Labenu - +1000h</h4>
+                <p>Outubro de 2021</p>
+                <p>Novembro de 2022</p>
+              </span>
+              <S.Description>
+                Programa com mais de 1000 horas de experiência prática em
+                desenvolvimento Full-stack, guiadas por metodologias ágeis
+                (Kanban/Scrum). Entre as habilidades aprendidas durante o curso
+                estão HTML, CSS, JavaScript, React, Styled-Components, React
+                Hooks, REST, Api Restful, HTTP, Jest, Node.JS, Knex, TypeScript,
+                MySQL, AWS, SQL, Git, Github, Firebase, Testes unitários e UI Design.
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
+                <h3>Impulso Javascript Evolution</h3>
+                <h4>DIO - 104h</h4>
+                <p>Junho de 2022</p>
+                <p>Agosto de 2022</p>
+              </span>
+              <S.Description>
+                Programa de desenvolvimento web e back-end utilizando a linguagem Javascript como sua stack principal, além de adiquirir conhecimentos em bancos de dados SQL e noSQL.
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
+                <h3>Ciência de Dados</h3>
+                <h4>DIO - 126h</h4>
+                <p>Setembro de 2022</p>
+                <p>Novembro de 2022</p>
+              </span>
+              <S.Description>
+                Programa de desenvolvimento de experiências em Python, banco de dados relacional e não relacional, além de uma imersão Cloud Computer e Machine Learning
+              </S.Description>
+            </S.Entry>
+          </S.Timeline>
+        </section>
+      </S.Section>
+      <S.Button onClick={onGetCv}>
+        <FilePdf size={32} weight="fill" />
+        Meu CV
+      </S.Button>
     </S.Container>
   );
 };
