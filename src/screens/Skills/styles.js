@@ -31,8 +31,8 @@ export const Container = styled.section`
 `;
 
 export const Tittle = styled.h2`
-  font-size: 5rem;
-  text-align: center;
+  font-size: 3rem;
+  margin-left: -4rem;
 `;
 
 export const SkillDescription = styled.div`
@@ -55,6 +55,7 @@ export const Image = styled.img`
   height: 22em;
   width: 22em;
   margin: 1rem;
+  filter: drop-shadow(5px 5px 10px #000);
   transition: all 0.3s ease;
 
   @media (max-width: 1367px) {

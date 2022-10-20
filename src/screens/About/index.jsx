@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <S.Container>
-      <h1>Sobre</h1>
+      <S.Title>Sobre</S.Title>
       <h2>Sou Rommel Santhiago Desenvolvedor Web Full Stack</h2>
       <p>
         Sou apaixonado por programação, com foco em desenvolvimento Web. Estou

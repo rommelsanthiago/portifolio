@@ -22,6 +22,10 @@ export const Container = styled.div`
     margin: 0 2rem;
 `
 
+export const Title = styled.h1`
+    font-size: 3rem;
+`
+
 export const Section = styled.section`
     display: flex;
     flex-wrap: wrap;
@@ -31,10 +35,9 @@ export const Section = styled.section`
 export const Timeline = styled.section`
     width: 100%;
     max-width: 450px;
-    background: #fff;
+    background: white;
     padding: 20px 10px;
     position: relative;
-    background-color: whitesmoke;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 3rem;
