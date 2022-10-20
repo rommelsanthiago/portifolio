@@ -2,23 +2,23 @@
     {
         "id": 1,
         "title": "POKEDEX",
-        "iframeUrl": "http://gebru-pokedex4.surge.sh",
+        "iframeUrl": "https://gebru-pokedex4.surge.sh",
         "gitHubUrl": "https://github.com/rommelsanthiago/Gebru-pokedex4",
-        "url": "http://gebru-pokedex4.surge.sh"
+        "url": "https://gebru-pokedex4.surge.sh"
     },
     {
         "id": 2,
         "title": "EVENT PLATFORM",
-        "iframeUrl": "http://ignite-lab-react-dun.vercel.app",
+        "iframeUrl": "https://ignite-lab-react-dun.vercel.app",
         "gitHubUrl": "https://github.com/rommelsanthiago/ignite-lab-react",
-        "url": "http://ignite-lab-react-dun.vercel.app"
+        "url": "https://ignite-lab-react-dun.vercel.app"
     },
     {
         "id": 3,
         "title": "LabeFood",
-        "iframeUrl": "http://labe-food4-project.surge.sh",
+        "iframeUrl": "https://labe-food4-project.surge.sh",
         "gitHubUrl": "https://github.com/rommelsanthiago/Gebru-labe-food4",
-        "url": "http://labe-food4-project.surge.sh"
+        "url": "https://labe-food4-project.surge.sh"
     },
     {
         "id": 4,
