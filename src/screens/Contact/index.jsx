@@ -1,111 +1,111 @@
-import React from 'react';
+import React, { useState, useRef } from "react";
+import { FormContainer, TextFieldElement } from "react-hook-form-mui";
+import Stack from '@mui/material/Stack';
+import SendIcon from '@mui/icons-material/Send';
 
-import * as S from './styles';
+import * as S from "./styles";
 
 const Contact = () => {
+  const [values, setValues] = useState();
+  const [loading, setLoading] = useState(false);
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    setLoading(true);
+  };
+
+  const onSubmit = (data) => {
+    setValues(data);
+    handleClick()
+    setTimeout(() => {
+      setLoading(false)
+      showModal()
+    }, 2000)
+  };
+
+  function showModal() {
+    ref.current?.showModal();
+    document.getElementById('modal').showModal();
+  }
+
+  function hideModal() {
+    ref.current?.close();
+    document.getElementById('modal').close();
+    document.location.reload();
+  }
+
   return (
     <S.Container>
       <h1>Contato</h1>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor,
-      tellus non lobortis dictum, purus dui interdum nulla, a volutpat odio
-      tellus vitae magna. Nunc non ultrices nisl, nec hendrerit lorem. Proin
-      vulputate diam in volutpat suscipit. Nunc imperdiet scelerisque dui, eget
-      sagittis metus congue vel. Morbi condimentum arcu ac ante scelerisque,
-      quis dapibus orci laoreet. Quisque consequat porta dictum. Donec pharetra
-      metus ut nibh accumsan eleifend. Duis scelerisque imperdiet justo, ac
-      placerat felis pulvinar vel. Vestibulum ante ipsum primis in faucibus orci
-      luctus et ultrices posuere cubilia curae; Quisque eu elit vel nisi tempus
-      fermentum id eget neque. In ultrices, lacus quis vulputate aliquet, nulla
-      felis condimentum quam, quis mollis nibh lacus eget velit. Sed sit amet
-      nunc vel ipsum mollis ultrices. Cras consequat, dolor id pellentesque
-      euismod, nulla dolor mattis risus, at tristique lacus ipsum eget risus.
-      Quisque euismod commodo neque id posuere. Donec vitae eros non neque
-      vulputate pellentesque. Fusce eu consectetur augue, quis pulvinar sem.
-      Vivamus ac turpis fermentum, imperdiet quam non, dapibus leo. Orci varius
-      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Integer eu urna urna. Nulla rutrum nibh eu quam ultrices condimentum. Cras
-      bibendum id mi quis lobortis. Etiam viverra gravida tellus eget
-      sollicitudin. Pellentesque vitae mauris vel lectus posuere dictum et in
-      urna. Sed cursus ligula scelerisque, vestibulum justo et, euismod nulla.
-      Proin consequat, leo a tincidunt condimentum, tortor odio dapibus turpis,
-      eget aliquet nulla risus vel ipsum. Ut tristique orci id ipsum auctor
-      vulputate. Praesent porta aliquet sem eu malesuada. Sed malesuada magna
-      vitae sapien commodo, facilisis congue ex rutrum. Etiam gravida ultrices
-      nunc, quis pharetra enim faucibus id. Integer varius ullamcorper
-      tincidunt. Sed non elit at lectus laoreet auctor. Ut a quam at neque
-      cursus efficitur. Vivamus blandit purus vel quam placerat ultricies.
-      Pellentesque pulvinar lorem vel felis ornare, ut varius ipsum posuere.
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur in
-      ligula feugiat, dignissim enim et, tincidunt quam. Fusce in cursus libero.
-      Integer quis hendrerit purus, ut sodales ligula. Sed rutrum, nibh id
-      dictum suscipit, nunc lorem elementum turpis, at eleifend libero urna ut
-      nisi. Nunc tincidunt varius elit, in viverra mauris laoreet at. Phasellus
-      tempor ultricies ipsum mattis tempus. Proin ut tincidunt odio. Nam nec
-      eros in magna laoreet venenatis vitae eu ligula. Maecenas sed diam at elit
-      lacinia blandit. Donec quam erat, luctus ut vehicula sit amet, molestie eu
-      tellus. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Ut laoreet aliquet risus vitae
-      lobortis. Nunc tristique sem sed lectus ultricies, et luctus diam
-      sollicitudin. Nunc et nisi at leo faucibus semper sed eget erat. Praesent
-      bibendum dolor non lacus varius gravida. Nulla pharetra, ipsum vitae
-      pellentesque suscipit, orci velit sodales ante, in blandit lacus metus et
-      orci. Aliquam faucibus elit at mi suscipit, at consectetur velit molestie.
-      Mauris sed metus odio. Integer facilisis, nulla accumsan pulvinar aliquam,
-      est augue luctus elit, quis interdum lorem leo eu diam. Sed nec mi semper,
-      tempor risus id, ornare dolor. Nullam in nunc velit. Generated 5
-      paragraphs, 503 words, 3352 bytes of Lorem Ipsum
-      </p>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor,
-      tellus non lobortis dictum, purus dui interdum nulla, a volutpat odio
-      tellus vitae magna. Nunc non ultrices nisl, nec hendrerit lorem. Proin
-      vulputate diam in volutpat suscipit. Nunc imperdiet scelerisque dui, eget
-      sagittis metus congue vel. Morbi condimentum arcu ac ante scelerisque,
-      quis dapibus orci laoreet. Quisque consequat porta dictum. Donec pharetra
-      metus ut nibh accumsan eleifend. Duis scelerisque imperdiet justo, ac
-      placerat felis pulvinar vel. Vestibulum ante ipsum primis in faucibus orci
-      luctus et ultrices posuere cubilia curae; Quisque eu elit vel nisi tempus
-      fermentum id eget neque. In ultrices, lacus quis vulputate aliquet, nulla
-      felis condimentum quam, quis mollis nibh lacus eget velit. Sed sit amet
-      nunc vel ipsum mollis ultrices. Cras consequat, dolor id pellentesque
-      euismod, nulla dolor mattis risus, at tristique lacus ipsum eget risus.
-      Quisque euismod commodo neque id posuere. Donec vitae eros non neque
-      vulputate pellentesque. Fusce eu consectetur augue, quis pulvinar sem.
-      Vivamus ac turpis fermentum, imperdiet quam non, dapibus leo. Orci varius
-      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Integer eu urna urna. Nulla rutrum nibh eu quam ultrices condimentum. Cras
-      bibendum id mi quis lobortis. Etiam viverra gravida tellus eget
-      sollicitudin. Pellentesque vitae mauris vel lectus posuere dictum et in
-      urna. Sed cursus ligula scelerisque, vestibulum justo et, euismod nulla.
-      Proin consequat, leo a tincidunt condimentum, tortor odio dapibus turpis,
-      eget aliquet nulla risus vel ipsum. Ut tristique orci id ipsum auctor
-      vulputate. Praesent porta aliquet sem eu malesuada. Sed malesuada magna
-      vitae sapien commodo, facilisis congue ex rutrum. Etiam gravida ultrices
-      nunc, quis pharetra enim faucibus id. Integer varius ullamcorper
-      tincidunt. Sed non elit at lectus laoreet auctor. Ut a quam at neque
-      cursus efficitur. Vivamus blandit purus vel quam placerat ultricies.
-      Pellentesque pulvinar lorem vel felis ornare, ut varius ipsum posuere.
-      Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur in
-      ligula feugiat, dignissim enim et, tincidunt quam. Fusce in cursus libero.
-      Integer quis hendrerit purus, ut sodales ligula. Sed rutrum, nibh id
-      dictum suscipit, nunc lorem elementum turpis, at eleifend libero urna ut
-      nisi. Nunc tincidunt varius elit, in viverra mauris laoreet at. Phasellus
-      tempor ultricies ipsum mattis tempus. Proin ut tincidunt odio. Nam nec
-      eros in magna laoreet venenatis vitae eu ligula. Maecenas sed diam at elit
-      lacinia blandit. Donec quam erat, luctus ut vehicula sit amet, molestie eu
-      tellus. Pellentesque habitant morbi tristique senectus et netus et
-      malesuada fames ac turpis egestas. Ut laoreet aliquet risus vitae
-      lobortis. Nunc tristique sem sed lectus ultricies, et luctus diam
-      sollicitudin. Nunc et nisi at leo faucibus semper sed eget erat. Praesent
-      bibendum dolor non lacus varius gravida. Nulla pharetra, ipsum vitae
-      pellentesque suscipit, orci velit sodales ante, in blandit lacus metus et
-      orci. Aliquam faucibus elit at mi suscipit, at consectetur velit molestie.
-      Mauris sed metus odio. Integer facilisis, nulla accumsan pulvinar aliquam,
-      est augue luctus elit, quis interdum lorem leo eu diam. Sed nec mi semper,
-      tempor risus id, ornare dolor. Nullam in nunc velit. Generated 5
-      paragraphs, 503 words, 3352 bytes of Lorem Ipsum
-      </p>
+      <S.Content>
+
+        <FormContainer onSuccess={onSubmit} >
+          <TextFieldElement
+            required
+            validation={{
+              required: "Este campo é obrigatório",
+            }}
+            label={"Nome"}
+            name={"name"}
+            margin={"dense"}
+            fullWidth={true}
+            color="success"
+          />
+          <br />
+          <TextFieldElement
+            required
+            validation={{
+              required: "Este campo é obrigatório",
+            }}
+            type={"email"}
+            margin={"dense"}
+            label={"Email"}
+            name={"email"}
+            fullWidth={true}
+            color="success"
+          />
+          <br />
+          <TextFieldElement
+            required
+            validation={{
+              required: "Este campo é obrigatório",
+            }}
+            type={"text"}
+            label={"Mensagem"}
+            name={"message"}
+            margin={"dense"}
+            multiline
+            rows={7}
+            fullWidth={true}
+            color="success"
+          />
+          <br />
+          <Stack sx={{ '& > button': { mt: 1 }, width:['8rem'] }}>
+            <S.SendButton
+              size="small"
+              type={"submit"}
+              endIcon={<SendIcon />}
+              loading={loading}
+              loadingPosition="end"
+              variant="contained"
+            >
+              Send
+            </S.SendButton>
+          </Stack>
+        </FormContainer>
+      </S.Content>
+      <S.Modal id="modal">
+        <S.SendButton onClick={hideModal}>OK</S.SendButton>
+        <h2> 
+          Gostaría de agradecê-lo pela visitar
+        </h2>
+        <p>
+          Espero ter uma colaboração frutífera com você no futuro
+        </p>
+        <p>
+          retornarei o contato o mais breve possível.
+        </p>
+      </S.Modal>  
     </S.Container>
   );
 };
