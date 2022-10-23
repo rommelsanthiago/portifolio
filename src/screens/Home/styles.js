@@ -61,5 +61,10 @@ export const Button = styled.button`
 `
 
 export const Section = styled.section`
-  column-count: 2;
+  display: flex;
+  align-items: center;
+
+  p {
+    width: 75%;
+  }
 `

@@ -36,11 +36,19 @@ export const Container = style.div`
     h1 {
         font-size: 3rem;
     }
+    
+    @media (max-width: 420px) {
+        margin: 0;
+    }
 `
 
 export const Content = style.section`
     width: 80%;
     margin: 0 auto;
+
+    @media (max-width: 420px) {
+        width: 90%;
+    }
 `
 
 export const SendButton = styled(LoadingButton)(() => ({

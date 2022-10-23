@@ -20,8 +20,8 @@ export const Container = styled.section`
   animation: ${slideSection} 1.5s ease;
   padding: 0 10rem;
   
-  @media (max-width: 540px) {
-    padding: 0 6rem;
+  @media (max-width: 420px) {
+    padding: 0;
   }
 
   @media (max-width: 768px) {
@@ -33,6 +33,10 @@ export const Container = styled.section`
 export const Tittle = styled.h2`
   font-size: 3rem;
   margin-left: -4rem;
+
+  @media (max-width: 420px) {
+    margin-left: 2rem;
+  }
 `;
 
 export const SkillDescription = styled.div`

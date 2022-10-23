@@ -34,6 +34,8 @@ const Contact = () => {
     document.location.reload();
   }
 
+  console.log(values)
+
   return (
     <S.Container>
       <h1>Contato</h1>
@@ -94,6 +96,11 @@ const Contact = () => {
           </Stack>
         </FormContainer>
       </S.Content>
+      {/* <div>
+        Data:
+        <br />
+        {JSON.stringify(values)}
+      </div> */}
       <S.Modal id="modal">
         <S.SendButton onClick={hideModal}>OK</S.SendButton>
         <h2> 

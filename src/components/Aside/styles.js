@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Aside = styled.aside`
     width: 20%;
+    min-width: 15rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,14 +10,26 @@ export const Aside = styled.aside`
     border-right: 1px solid;
     padding-top: 1rem;
     position: fixed;
-    left: 0;
+    background: whitesmoke;
+    transition: all 0.5s ease;
+    left: ${props => props.left};
     top: 0;
+    z-index: 9;
 `
 
 export const Img = styled.img`
     max-width: 12rem;
     filter: drop-shadow(1px 1px 2px green)
         drop-shadow(-1px -1px 2px green)
+`
+
+export const Nav = styled.nav`
+    background: #63D471;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem calc((100vw - 1000px) / 2);
+    z-index: 12;
 `
 
 export const Ul = styled.ul`

@@ -45,7 +45,7 @@ export const Timeline = styled.section`
         content: '';
         position: absolute;
         top: 0px;
-        left:calc(25% + 16px);
+        left:calc(28% + 16px);
         bottom: 0px;
         width: 4px;
         background: #ddd;
@@ -54,7 +54,12 @@ export const Timeline = styled.section`
         content: "";
         display: table;
         clear: both;
-    } 
+    }
+    
+    @media (max-width: 420px){
+        width: 100vw;
+        margin-left: -2.5rem;
+    }
 `
 
 export const Entry = styled.article`
@@ -76,8 +81,8 @@ export const Entry = styled.article`
             background-color: #fff;
             border-radius: 100%;
             top: 15%;
-            right: 1px;
-            z-index: 99;
+            right: -12px;
+            z-index: 8;
         }
         h3 {
             margin: 0;

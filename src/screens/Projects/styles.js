@@ -20,7 +20,7 @@ export const Container = styled.div`
     transition: all 0.3s ease;
     animation: ${slideSection} 2s ease;
     padding: 2rem 1rem;
-    margin: 0 2rem;
+    margin: 4rem;
 
     h1 {
         font-size: 3rem;
@@ -38,6 +38,11 @@ export const Container = styled.div`
                 transform: scale(1.3);
             }
         }
+    }
+    
+    @media (max-width: 420px) {
+        padding: 0 1rem;
+        margin: 0;
     }
 `
 

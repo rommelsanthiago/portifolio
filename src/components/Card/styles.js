@@ -28,6 +28,10 @@ export const Container = styled.article`
             }
         }
     }
+
+    @media (max-width: 420px) {
+        margin: 1rem 1rem;
+    }
 `
 
 export const TumbnailContainer = styled.div`

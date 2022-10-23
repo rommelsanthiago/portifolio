@@ -6,9 +6,15 @@ export const Main = styled.main`
 `
 
 export const Section = styled.section`
-    width: 80%;
+    width: ${props => props.width};
     position: absolute;
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
+`
+
+export const Button = styled.button`
+    background: none;
+    border: none;
+    z-index: 99;
 `
