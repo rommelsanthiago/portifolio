@@ -35,6 +35,7 @@ export const Container = style.div`
 
     h1 {
         font-size: 3rem;
+        margin: 1rem 0;
     }
     
     @media (max-width: 420px) {

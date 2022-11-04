@@ -72,6 +72,19 @@ const Contact = () => {
             validation={{
               required: "Este campo é obrigatório",
             }}
+            type={"subject"}
+            margin={"dense"}
+            label={"Assunto"}
+            name={"subject"}
+            fullWidth={true}
+            color="success"
+          />
+          <br />
+          <TextFieldElement
+            required
+            validation={{
+              required: "Este campo é obrigatório",
+            }}
             type={"text"}
             label={"Mensagem"}
             name={"message"}

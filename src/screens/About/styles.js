@@ -20,16 +20,26 @@ export const Container = styled.div`
     animation: ${slideSection} 1.5s ease;
     padding: 2rem 1rem;
     margin: 0 2rem;
+
+    @media (max-width: 420px) {
+        margin: 0;
+        padding: 1rem;
+    }
 `
 
 export const Title = styled.h1`
     font-size: 3rem;
+
 `
 
 export const Section = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 420px) {
+        padding: 0 2rem;
+    }
 `
 
 export const Timeline = styled.section`
@@ -59,6 +69,10 @@ export const Timeline = styled.section`
     @media (max-width: 420px){
         width: 100vw;
         margin-left: -2.5rem;
+        
+        &:before {
+            left: 16px;
+        }
     }
 `
 
@@ -95,6 +109,28 @@ export const Entry = styled.article`
         p {
             margin: 0;
             font-size: 80%;
+        }
+    }
+
+    @media (max-width: 420px) {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            width: 100%;
+            margin-left: 1.5rem;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border: 3px solid salmon;
+                background-color: #fff;
+                border-radius: 100%;
+                top: 5%;
+                left: -25px;
+                z-index: 8;
+            }
         }
     }
 `

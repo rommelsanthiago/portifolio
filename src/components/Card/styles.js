@@ -30,6 +30,7 @@ export const Container = styled.article`
     }
 
     @media (max-width: 420px) {
+        width: 18rem;
         margin: 1rem 1rem;
     }
 `
@@ -40,6 +41,10 @@ export const TumbnailContainer = styled.div`
     display: inline-block;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 420px) {
+        width: calc(960px * 0.25);
+    }
 `
 
 export const Tumbnail = styled.div`
@@ -65,5 +70,11 @@ export const Tumbnail = styled.div`
     iframe {
         width: 1235px;
         height: 685px;
+    }
+
+    @media (max-width: 420px) {
+        iframe {
+            width: 960px;
+        }
     }
 `

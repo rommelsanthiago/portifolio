@@ -21,7 +21,7 @@ export const Container = styled.section`
   padding: 0 10rem;
   
   @media (max-width: 420px) {
-    padding: 0;
+    padding: 1rem 0;
   }
 
   @media (max-width: 768px) {

@@ -41,8 +41,14 @@ export const Container = styled.div`
     }
     
     @media (max-width: 420px) {
-        padding: 0 1rem;
+        padding: 1rem;
         margin: 0;
+
+        h3 {
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.5em;
+        }
     }
 `
 

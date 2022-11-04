@@ -25,6 +25,9 @@ export const Container = styled.main`
     max-width: 450px;
   }
 
+  @media (max-width: 420px) {
+    padding: 2.5em 0;
+  }
 `;
 
 export const Quote = styled.q`
@@ -66,5 +69,14 @@ export const Section = styled.section`
 
   p {
     width: 75%;
+  }
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+
+    p {
+      width: 100%;
+      text-align: justify;
+    }
   }
 `

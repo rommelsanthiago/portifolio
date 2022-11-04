@@ -17,4 +17,10 @@ export const Button = styled.button`
     background: none;
     border: none;
     z-index: 99;
+
+    @media (max-width: 420px) {
+        width: 100%;
+        background: #b1b1b1ba;
+        position: fixed;
+    }
 `
