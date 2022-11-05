@@ -19,14 +19,16 @@ export const Container = styled.section`
   transition: all 0.3s ease;
   animation: ${slideSection} 1.5s ease;
   padding: 0 10rem;
+  position: relative;
   
   @media (max-width: 420px) {
     padding: 1rem 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 920px) {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
   }
 `;
 
@@ -77,45 +79,69 @@ export const Image = styled.img`
   }
 `;
 
-export const Show = styled.section`
-    width: 100%;
-    height: 100%;
+export const Show = styled.dialog`
+    width: 105vw;
+    height: 105vh;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     padding: 3rem 10rem;
-    background: none;
+    background: rgba(0,0,0,0.8);
     top: 50%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 99;
 
     @media (max-width: 620px){
-        left: 47%;
+        padding: 0;
+        right: 14%;
+    }
+
+    @media (max-width: 920px) {
+      padding: 3rem 0;
     }
 
     h2 {
-        height: 20rem;
-        background-color: rgba(0, 0, 0, 0.8);
+        width: 95vw;
+        background-color: black;
         padding: 4rem 2rem;
-    }
+        border-radius: 8px;
+        position: relative;
 
-    button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 1.5rem;
-        border-radius: 5px;
-        cursor: pointer;
-        position: fixed;
-        top: 25%;
-        right: 14%;
-        transition: all 0.3s ease;
+        button {
+          background: none;
+          border: none;
+          color: #fff;
+          font-size: 1.5rem;
+          border-radius: 5px;
+          cursor: pointer;
+          position: fixed;
+          top: 35%;
+          right: 15%;
+          transition: all 0.3s ease;
+  
+          &:hover {
+              border: 1px solid #fff;
+          }
 
-        &:hover {
-            border: 1px solid #fff;
+          @media (max-width: 920px) {
+            top: 30%;
+            right: 6%;
+          }
+
+          @media (max-width: 420px) {
+            top: 10%;
+            right: 5%;
+          }
+        }
+
+        @media (max-width: 420px){
+          width: 100vw;
+          height: 100vh;
+          padding: 6rem 2rem;
+          margin: 0;
         }
     }
 `

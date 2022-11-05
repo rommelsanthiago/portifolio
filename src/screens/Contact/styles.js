@@ -74,7 +74,27 @@ export const Modal = style.dialog`
     }
 
     h2, p {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 0 .5em;
+
+            &: hover {
+                color: green;
+            }
+        }
+    }
+
+    strong {
+        display: flex;
+        align-content: center;
+
+        svg {
+            margin: 0 .1em;
+        }
     }
 
     button {

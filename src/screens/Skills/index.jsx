@@ -97,8 +97,10 @@ const Skills = () => {
         {
             showDescription ?
             <S.Show>
-              <button onClick={() => setShowDescription()}>X</button>
-              <h2>{showDescription}</h2>
+              <h2>
+                <button onClick={() => setShowDescription()}>X</button>
+                {showDescription}
+              </h2>
             </S.Show>
             : ''
         }

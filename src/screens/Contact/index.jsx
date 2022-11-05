@@ -2,6 +2,8 @@ import React, { useState, useRef } from "react";
 import { FormContainer, TextFieldElement } from "react-hook-form-mui";
 import Stack from '@mui/material/Stack';
 import SendIcon from '@mui/icons-material/Send';
+import axios from "axios";
+import { EnvelopeOpen, WhatsappLogo } from "phosphor-react"
 
 import * as S from "./styles";
 
@@ -16,10 +18,18 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     setValues(data);
-    handleClick()
+    handleClick();
+
+    axios.post(import.meta.env.VITE_API_URL, data)
+      .then(() => {
+        showModal();
+      })
+      .catch(err => {
+        showModalError()
+      });
+    
     setTimeout(() => {
       setLoading(false)
-      showModal()
     }, 2000)
   };
 
@@ -28,13 +38,22 @@ const Contact = () => {
     document.getElementById('modal').showModal();
   }
 
+  function showModalError() {
+    ref.current?.showModal();
+    document.getElementById('modalError').showModal();
+  }
+
   function hideModal() {
     ref.current?.close();
     document.getElementById('modal').close();
     document.location.reload();
   }
 
-  console.log(values)
+  function hideModalError() {
+    ref.current?.close();
+    document.getElementById('modalError').close();
+    document.location.reload();
+  }
 
   return (
     <S.Container>
@@ -109,11 +128,6 @@ const Contact = () => {
           </Stack>
         </FormContainer>
       </S.Content>
-      {/* <div>
-        Data:
-        <br />
-        {JSON.stringify(values)}
-      </div> */}
       <S.Modal id="modal">
         <S.SendButton onClick={hideModal}>OK</S.SendButton>
         <h2> 
@@ -124,6 +138,27 @@ const Contact = () => {
         </p>
         <p>
           retornarei o contato o mais breve possível.
+        </p>
+      </S.Modal>
+      <S.Modal id="modalError">
+        <S.SendButton onClick={hideModalError}>OK</S.SendButton>
+        <h2> 
+          Desculpe algo deu errado 😢
+        </h2>
+        <p>
+          Tente novamente mais tarde ou entre em contato direto
+        </p>
+        <p>
+          <strong>
+            <EnvelopeOpen weight="fill" />Email:  
+          </strong> 
+          <a href="mailto:rommel.santhiago@gmail.com" target="_blank">rommel.santhiago@gmail.com</a>
+        </p>
+        <p>
+          <strong>
+            <WhatsappLogo weight="fill" />WhatsApp: 
+          </strong>
+            <a href="http://wa.me/5588988750959" target="_blank">(88) 9.8875-0959</a>
         </p>
       </S.Modal>  
     </S.Container>
