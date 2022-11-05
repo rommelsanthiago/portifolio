@@ -52,7 +52,6 @@ const Contact = () => {
   function hideModalError() {
     ref.current?.close();
     document.getElementById('modalError').close();
-    document.location.reload();
   }
 
   return (
