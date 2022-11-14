@@ -91,7 +91,7 @@ export const Entry = styled.article`
             position: absolute;
             width: 16px;
             height: 16px;
-            border: 3px solid salmon;
+            border: 3px solid green;
             background-color: #fff;
             border-radius: 100%;
             top: 15%;
