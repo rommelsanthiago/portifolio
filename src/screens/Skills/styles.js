@@ -39,6 +39,10 @@ export const Tittle = styled.h2`
   @media (max-width: 420px) {
     margin-left: 2rem;
   }
+
+  @media (max-width: 920px) {
+    margin-left: 3rem;
+  }
 `;
 
 export const SkillDescription = styled.div`
