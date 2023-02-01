@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.11.0",
-    "@mui/lab": "^5.0.0-alpha.104",
+    "@mui/lab": "^5.0.0-alpha.118",
     "@mui/material": "^5.10.10",
     "@mui/x-date-pickers": "^5.0.5",
     "axios": "^1.2.4",
