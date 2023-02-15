@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Divide as Hamburger } from 'hamburger-react';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import * as S from "./styles";
 import Aside from "../Aside";
@@ -38,8 +37,11 @@ export default function Main() {
                 isOpen={isOpen} 
                 setOpen={setOpen} 
             />
-            <S.Contact href="https://wa.me/5588988750959" target="_blank">
-                {/* <WhatsAppIcon /> */}
+            <S.Contact
+                href="https://wa.me/5588988750959"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
             </S.Contact>
             <S.Section width={screen > 920 ? '80%' : '100%'} >
                 <Routers />

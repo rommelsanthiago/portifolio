@@ -16,10 +16,15 @@ const Card = (props) => {
         <a
           href={props.gitHubUrl}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <GithubLogo size={32} weight="fill" />
         </a>
-        <a href={props.url} target="_blank">
+        <a
+          href={props.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GlobeHemisphereWest size={32} weight="fill" />
         </a>
       </footer>

@@ -64,25 +64,53 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
         </S.Ul>
       </nav>
       <S.Social>
-        <a href="https://www.linkedin.com/in/rommelsanthiago" target="_blank" >
+        <a
+         href="https://www.linkedin.com/in/rommelsanthiago" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <LinkedinLogo weight="fill" />
         </a>
-        <a href="https://github.com/rommelsanthiago" target="_blank" >
+        <a
+         href="https://github.com/rommelsanthiago" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <GithubLogo weight="fill" />
         </a>
-        <a href="https://twitter.com/RommelSanthiago" target="_blank" >
+        <a
+         href="https://twitter.com/RommelSanthiago" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <TwitterLogo weight="fill" />
         </a>
-        <a href="https://www.youtube.com/channel/UC3IpAXprcUJRaCn7G7Hh9YQ" target="_blank" >
+        <a
+         href="https://www.youtube.com/channel/UC3IpAXprcUJRaCn7G7Hh9YQ" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <YoutubeLogo weight="fill" />
         </a>
-        <a href="https://www.instagram.com/rommelsanthiago/" target="_blank" >
+        <a
+         href="https://www.instagram.com/rommelsanthiago/" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <InstagramLogo weight="fill" />
         </a>
-        <a href="https://pt.stackoverflow.com/users/271415/rommel-santhiago" target="_blank" >
+        <a
+         href="https://pt.stackoverflow.com/users/271415/rommel-santhiago" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <StackOverflowLogo weight="fill" />
         </a>
-        <a href="https://discord.com/users/724842559779766312" target="_blank" >
+        <a
+         href="https://discord.com/users/724842559779766312" 
+         target="_blank" 
+         rel="noopener noreferrer"
+        >
           <DiscordLogo weight="fill" />
         </a>
       </S.Social>
