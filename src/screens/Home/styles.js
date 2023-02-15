@@ -69,6 +69,9 @@ export const Section = styled.section`
 
   p {
     width: 75%;
+    text-align: justify;
+    font-weight: 600;
+    margin: 0;
   }
 
   @media (max-width: 420px) {
@@ -77,6 +80,7 @@ export const Section = styled.section`
     p {
       width: 100%;
       text-align: justify;
+      margin: 0;
     }
   }
 `

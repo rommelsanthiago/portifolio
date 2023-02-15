@@ -18,7 +18,7 @@ const slideSection = keyframes`
 export const Container = styled.section`
   transition: all 0.3s ease;
   animation: ${slideSection} 1.5s ease;
-  padding: 0 10rem;
+  padding: 0 8rem;
   position: relative;
   
   @media (max-width: 420px) {
@@ -46,7 +46,6 @@ export const Tittle = styled.h2`
 `;
 
 export const SkillDescription = styled.div`
-  height: 30rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -62,8 +61,8 @@ export const SkillDescription = styled.div`
 
 export const Image = styled.img`
   cursor: pointer;
-  height: 22em;
-  width: 22em;
+  height: 16em;
+  width: 16em;
   margin: 1rem;
   filter: drop-shadow(5px 5px 10px #000);
   transition: all 0.3s ease;

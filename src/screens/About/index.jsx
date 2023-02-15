@@ -100,13 +100,13 @@ const About = () => {
             </S.Entry>
             <S.Entry>
               <span>
-                <h3>Ciência de Dados</h3>
-                <h4>DIO - 126h</h4>
-                <p>Setembro de 2022</p>
+                <h3>Pottencial .NET Developer</h3>
+                <h4>DIO - 96h</h4>
                 <p>Novembro de 2022</p>
+                <p>Janeiro de 2023</p>
               </span>
               <S.Description>
-                Programa de desenvolvimento de experiências em Python, banco de dados relacional e não relacional, além de uma imersão Cloud Computer e Machine Learning
+              O Pottencial .NET Developer é o bootcamp para profissionais que buscam aperfeiçoar suas habilidades em desenvolvimento back-end com .NET e C#, e querem ganhar mais confiança no desenvolvimento de projetos. Uma trilha completa em .NET, Banco de Dados SQL e projetos práticos que te preparam para atuar em grandes cases de mercado. Ao final do programa, você ainda ficará disponível para o processo seletivo da Pottencial, maior insurtech do Brasil, com vagas full remotas.
               </S.Description>
             </S.Entry>
           </S.Timeline>
