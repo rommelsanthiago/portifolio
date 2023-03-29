@@ -1,34 +1,55 @@
 [
     {
         "id": 1,
+        "title": "MARVEL COMICS STORE",
+        "iframeUrl": "https://comics-store-marvel.vercel.app/",
+        "gitHubUrl": "https://github.com/rommelsanthiago/marvel-comics-store",
+        "url": "https://comics-store-marvel.vercel.app/"
+    },
+    {
+        "id": 2,
+        "title": "SHARENERGY",
+        "iframeUrl": "https://sharenergy-challenge.vercel.app",
+        "gitHubUrl": "https://github.com/rommelsanthiago/desafio-sharenergy-2023-01",
+        "url": "https://sharenergy-challenge.vercel.app/"
+    },
+    {
+        "id": 3,
+        "title": "BLOG TECH",
+        "iframeUrl": "http://blog-tech-apiki.vercel.app",
+        "gitHubUrl": "https://github.com/rommelsanthiago/blog_tech-apiki",
+        "url": "http://blog-tech-apiki.vercel.app"
+    },
+    {
+        "id": 4,
         "title": "POKEDEX",
         "iframeUrl": "https://gebru-pokedex4.surge.sh",
         "gitHubUrl": "https://github.com/rommelsanthiago/Gebru-pokedex4",
         "url": "https://gebru-pokedex4.surge.sh"
     },
     {
-        "id": 2,
+        "id": 5,
         "title": "EVENT PLATFORM",
         "iframeUrl": "https://ignite-lab-react-dun.vercel.app",
         "gitHubUrl": "https://github.com/rommelsanthiago/ignite-lab-react",
         "url": "https://ignite-lab-react-dun.vercel.app"
     },
     {
-        "id": 3,
+        "id": 6,
         "title": "LabeFood",
         "iframeUrl": "https://labe-food4-project.surge.sh",
         "gitHubUrl": "https://github.com/rommelsanthiago/Gebru-labe-food4",
         "url": "https://labe-food4-project.surge.sh"
     },
     {
-        "id": 4,
+        "id": 7,
         "title": "Landing Page Logistic",
         "iframeUrl": "https://projetolandingpage.web.app",
         "gitHubUrl": "https://github.com/rommelsanthiago/Gebru-landing-page2",
         "url": "https://projetolandingpage.web.app"
     },
     {
-        "id": 5,
+        "id": 8,
         "title": "Alura conf (EVENT)",
         "iframeUrl": "https://aluraconf.netlify.app",
         "gitHubUrl": "https://github.com/rommelsanthiago/aluraconf",
