@@ -15,10 +15,10 @@
     },
     {
         "id": 3,
-        "title": "BLOG TECH",
-        "iframeUrl": "http://blog-tech-apiki.vercel.app",
-        "gitHubUrl": "https://github.com/rommelsanthiago/blog_tech-apiki",
-        "url": "http://blog-tech-apiki.vercel.app"
+        "title": "CLONE NETFLIX",
+        "iframeUrl": "https://klnflix.firebaseapp.com/",
+        "gitHubUrl": "https://github.com/rommelsanthiago/clone_netflix",
+        "url": "https://klnflix.firebaseapp.com/"
     },
     {
         "id": 4,
@@ -54,5 +54,12 @@
         "iframeUrl": "https://aluraconf.netlify.app",
         "gitHubUrl": "https://github.com/rommelsanthiago/aluraconf",
         "url": "https://aluraconf.netlify.app"
+    },
+    {
+        "id": 9,
+        "title": "BLOG TECH",
+        "iframeUrl": "http://blog-tech-apiki.vercel.app",
+        "gitHubUrl": "https://github.com/rommelsanthiago/blog_tech-apiki",
+        "url": "http://blog-tech-apiki.vercel.app"
     }
 ]
