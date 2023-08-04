@@ -73,6 +73,20 @@ const About = () => {
           <S.Timeline>
             <S.Entry>
               <span>
+                <h3>Segurança da Informação</h3>
+                <h4>Alura - 461h</h4>
+                <p>Fevereiro de 2023</p>
+                <p>Julho de 2023</p>
+              </span>
+              <S.Description>
+                <b>Trilha Desenvolve - GBTech</b><br/>
+                Programa de treinamento intensivo destinado a capacitar profissionais na área de Segurança da Informação. Ele abrange diversos aspectos relacionados à proteção de dados e sistemas, visando garantir a confidencialidade, integridade e disponibilidade das informações.
+                O curso é estruturado em módulos que abrangem desde conceitos iniciais, como lógica de programação e arquitetura de computadores, até tópicos mais avançados, como segurança de rede, práticas de pentest (teste de penetração) e conformidade com a Lei Geral de Proteção de Dados (LGPD).
+
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
                 <h3>Dev Web FullStack</h3>
                 <h4>Labenu - +1000h</h4>
                 <p>Outubro de 2021</p>
@@ -106,7 +120,7 @@ const About = () => {
                 <p>Janeiro de 2023</p>
               </span>
               <S.Description>
-              O Pottencial .NET Developer é o bootcamp para profissionais que buscam aperfeiçoar suas habilidades em desenvolvimento back-end com .NET e C#, e querem ganhar mais confiança no desenvolvimento de projetos. Uma trilha completa em .NET, Banco de Dados SQL e projetos práticos que te preparam para atuar em grandes cases de mercado. Ao final do programa, você ainda ficará disponível para o processo seletivo da Pottencial, maior insurtech do Brasil, com vagas full remotas.
+                O Pottencial .NET Developer é o bootcamp para profissionais que buscam aperfeiçoar suas habilidades em desenvolvimento back-end com .NET e C#, e querem ganhar mais confiança no desenvolvimento de projetos. Uma trilha completa em .NET, Banco de Dados SQL e projetos práticos que te preparam para atuar em grandes cases de mercado. Ao final do programa, você ainda ficará disponível para o processo seletivo da Pottencial, maior insurtech do Brasil, com vagas full remotas.
               </S.Description>
             </S.Entry>
           </S.Timeline>
