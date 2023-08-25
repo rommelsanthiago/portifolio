@@ -20,6 +20,9 @@ export const Button = styled.button`
     border: none;
     z-index: 99;
 
+    &:first-child {
+        color: ${({ theme }) => theme.text};
+    }
     @media (max-width: 420px) {
         width: 100%;
         background: #b1b1b1ba;

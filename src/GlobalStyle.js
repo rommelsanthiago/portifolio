@@ -9,9 +9,12 @@ export const darkTheme = {
     text: 'whitesmoke'
 };
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        background-color: ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
+        transition: background-color 0.3s ease-in, color 0.3s ease-in;
     }
     
     *,
@@ -26,8 +29,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         text-decoration: none;
         font-family: "Poppins", sans-serif;
-        background: ${({ theme }) => theme.body};
-        color: ${({ theme }) => theme.text};
-        transition: background 0.3s ease-in, color 0.3s ease-in;
     }
 `;
+
+export default GlobalStyle;

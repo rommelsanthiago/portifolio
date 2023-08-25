@@ -7,6 +7,7 @@ export const Aside = styled.aside`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: ${({ theme }) => theme.body};
     border-right: 1px solid;
     padding-top: 1rem;
     position: fixed;

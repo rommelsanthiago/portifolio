@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Main from './components/Main';
-import { GlobalStyle, lightTheme, darkTheme } from './GlobalStyle';
+import GlobalStyle, { lightTheme, darkTheme } from './GlobalStyle';
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -27,10 +27,8 @@ const App = () => {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <>
         <GlobalStyle />
         <Main toggleTheme={toggleTheme} isDarkTheme={isDarkTheme}/>
-      </>
     </ThemeProvider>
   );
 };
