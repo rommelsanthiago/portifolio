@@ -43,8 +43,9 @@ export const Contact = styled.h2`
 export const Button = styled.button`
     display: flex;
     align-items: center;
+    color: ${({ theme }) => theme.text};
     background: none;
-    border: 1px solid black;
+    border: 1px solid ${({ theme }) => theme.text};
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1.5rem;

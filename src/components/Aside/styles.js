@@ -10,7 +10,6 @@ export const Aside = styled.aside`
     border-right: 1px solid;
     padding-top: 1rem;
     position: fixed;
-    background: whitesmoke;
     transition: all 0.5s ease;
     left: ${props => props.left};
     top: 0;
@@ -50,7 +49,8 @@ export const Button = styled("button")`
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 600;
-    border-bottom: 1px solid;
+    color: ${({ theme }) => theme.text};
+    border-bottom: 1px solid ${({ theme }) => theme.text};
     margin-top: 1rem;
     transition: all 0.3s ease;
 
@@ -72,7 +72,7 @@ export const Social = styled.div`
     padding-top: 3rem;
 
     svg {
-        color: black;
+        color: ${({ theme }) => theme.text};
         font-size: 1.2rem;
         transition: all 0.3s ease;
 

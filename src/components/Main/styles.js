@@ -27,6 +27,26 @@ export const Button = styled.button`
     }
 `
 
+export const ButtonTheme = styled.button`
+    color: ${({ theme }) => theme.text};
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 1em;
+    top: 0.5em;
+    z-index: 99;
+
+    svg{
+        transition: all 0.3s ease;
+    
+        &: hover {
+           transform: scale(1.5);
+        }
+    }
+`
+
 export const Contact = styled.a`
     width: 4em;
     height: 4em;

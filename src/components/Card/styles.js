@@ -20,11 +20,13 @@ export const Container = styled.article`
         padding: 0.5rem 3rem;
 
         a {
-            color: black;
-            transition: all 0.3s ease;
-
-            &:hover {
-                transform: scale(1.3);
+            svg {
+                color: ${({ theme }) => theme.text};
+                transition: all 0.3s ease;
+                &: hover {
+                    color: green;
+                    transform: scale(1.3);
+                }
             }
         }
     }

@@ -68,6 +68,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://www.linkedin.com/in/rommelsanthiago" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="LinkedIn"
         >
           <LinkedinLogo weight="fill" />
         </a>
@@ -75,6 +76,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://github.com/rommelsanthiago" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Github"
         >
           <GithubLogo weight="fill" />
         </a>
@@ -82,6 +84,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://twitter.com/RommelSanthiago" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Twitter"
         >
           <TwitterLogo weight="fill" />
         </a>
@@ -89,6 +92,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://www.youtube.com/channel/UC3IpAXprcUJRaCn7G7Hh9YQ" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Youtube"
         >
           <YoutubeLogo weight="fill" />
         </a>
@@ -96,6 +100,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://www.instagram.com/rommelsanthiago/" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Instagram"
         >
           <InstagramLogo weight="fill" />
         </a>
@@ -103,6 +108,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://pt.stackoverflow.com/users/271415/rommel-santhiago" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Stack Overflow"
         >
           <StackOverflowLogo weight="fill" />
         </a>
@@ -110,6 +116,7 @@ const Aside = ({show, screen, handleToggle, isOpen, setOpen}) => {
          href="https://discord.com/users/724842559779766312" 
          target="_blank" 
          rel="noopener noreferrer"
+         title="Discord"
         >
           <DiscordLogo weight="fill" />
         </a>

@@ -16,7 +16,6 @@ const slideSection = keyframes`
 `
 
 export const Container = styled.div`
-    background: whitesmoke;
     transition: all 0.3s ease;
     animation: ${slideSection} 2s ease;
     padding: 2rem 1rem;
@@ -31,11 +30,15 @@ export const Container = styled.div`
         justify-content: center;
         align-items: center;
         a {
-            color: black;
-            transition: all 0.3s ease;
+            margin-left: .5em;
 
-            &:hover {
-                transform: scale(1.3);
+            svg {
+                color: ${({ theme }) => theme.text};
+                transition: all 0.3s ease;
+                &: hover {
+                    color: green;
+                    transform: scale(1.3);
+                }
             }
         }
     }

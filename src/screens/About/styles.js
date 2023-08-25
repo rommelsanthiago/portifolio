@@ -45,7 +45,6 @@ export const Section = styled.section`
 export const Timeline = styled.section`
     width: 100%;
     max-width: 450px;
-    background: white;
     padding: 20px 10px;
     position: relative;
     border-top-left-radius: 10px;
@@ -92,7 +91,7 @@ export const Entry = styled.article`
             width: 16px;
             height: 16px;
             border: 3px solid green;
-            background-color: #fff;
+            background-color: ${({ theme }) => theme.body};
             border-radius: 100%;
             top: 15%;
             right: -12px;
@@ -125,7 +124,7 @@ export const Entry = styled.article`
                 width: 16px;
                 height: 16px;
                 border: 3px solid salmon;
-                background-color: #fff;
+                background-color: ${({ theme }) => theme.body};
                 border-radius: 100%;
                 top: 5%;
                 left: -25px;
@@ -145,8 +144,9 @@ export const Description = styled.p`
 export const Button = styled.button`
     display: flex;
     align-items: center;
+    color: ${({ theme }) => theme.text};
     background: none;
-    border: 1px solid black;
+    border: 1px solid ${({ theme }) => theme.text};
     border-radius: 0.5rem;
     cursor: pointer;
     font-size: 1.5rem;

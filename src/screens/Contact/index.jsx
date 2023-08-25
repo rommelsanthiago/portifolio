@@ -70,6 +70,7 @@ const Contact = () => {
             margin={"dense"}
             fullWidth={true}
             color="success"
+            border-color='red'
           />
           <br />
           <TextFieldElement

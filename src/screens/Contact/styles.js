@@ -1,6 +1,5 @@
 import style, { keyframes } from "styled-components";
 import { styled } from '@mui/material/styles';
-import { FormContainer } from "react-hook-form-mui";
 import LoadingButton from '@mui/lab/LoadingButton';
 
 const slideSection = keyframes`
@@ -49,6 +48,14 @@ export const Content = style.section`
 
     @media (max-width: 420px) {
         width: 90%;
+    }
+
+    label {
+        color: ${({ theme }) => theme.text};
+    }
+
+    fieldset {
+        border-color: ${({ theme }) => theme.text};
     }
 `
 
