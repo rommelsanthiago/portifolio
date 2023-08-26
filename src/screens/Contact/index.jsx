@@ -70,13 +70,12 @@ const Contact = () => {
             margin={"dense"}
             fullWidth={true}
             color="success"
-            border-color='red'
           />
           <br />
           <TextFieldElement
             required
             validation={{
-              required: "Este campo é obrigatório",
+              required: "Por favor, insira um endereço de e-mail válido",
             }}
             type={"email"}
             margin={"dense"}

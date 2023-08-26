@@ -57,6 +57,14 @@ export const Content = style.section`
     fieldset {
         border-color: ${({ theme }) => theme.text};
     }
+
+    form {
+        div {
+            input, textarea {
+                color: ${({ theme }) => theme.text};   
+            }
+        }
+    }
 `
 
 export const SendButton = styled(LoadingButton)(() => ({
