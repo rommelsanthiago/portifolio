@@ -73,6 +73,19 @@ const About = () => {
           <S.Timeline>
             <S.Entry>
               <span>
+                <h3>Desenvolvimento Java com Cloud AWS</h3>
+                <h4>DIO - 65h</h4>
+                <p>Agosto de 2023</p>
+                <p>Setembro de 2023</p>
+              </span>
+              <S.Description>
+                <b>Coding The Future - GFT e AWS | Desenvolvimento Java com Cloud AWS</b><br/>
+                Bootcamp da DIO em parceria com a GFT e a AWS, duas gigantes do mercado tecnológico, onde pude aprimorar meu conhecimento em Java com ênfase em computação em nuvem AWS e Inteligência Artificial.
+                Estudei conteúdos que abrangem desde os princípios de desenvolvimento de software, orientação a objetos, bancos de dados, Spring Boot e AWS, até mentorias técnicas altamente especializadas, focadas e aprofundadas em Inteligência Artificial, como programação assistida por IA com o Amazon CodeWhisperer.
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
                 <h3>Segurança da Informação</h3>
                 <h4>Alura - 461h</h4>
                 <p>Fevereiro de 2023</p>
