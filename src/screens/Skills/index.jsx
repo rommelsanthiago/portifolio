@@ -2,22 +2,25 @@ import React, { useState, Link } from "react";
 
 import * as S from "./styles";
 import CSS from "../../assets/images/css.png";
-import HTML from "../../assets/images/html.png";
-import javaScript from "../../assets/images/javascript.png";
-import REACT from "../../assets/images/react.png";
-import styled from "../../assets/images/styled-components.png";
-import git from "../../assets/images/git.png";
-import gitHub from "../../assets/images/github.png";
-import typeScript from "../../assets/images/typescript.png";
-import nextjs from "../../assets/images/nextjs.png";
-import scrum from "../../assets/images/scrum.png";
-import kanban from "../../assets/images/kanban.png";
-import docker from "../../assets/images/docker.png";
-import dockerCompose from "../../assets/images/docker-compose.png";
-import terraform from "../../assets/images/terraform.png"
 import aws from "../../assets/images/aws.png";
 import gcp from "../../assets/images/gcp.png"
+import git from "../../assets/images/git.png";
+import HTML from "../../assets/images/html.png";
+import java from "../../assets/images/java.png";
+import REACT from "../../assets/images/react.png";
+import scrum from "../../assets/images/scrum.png";
+import gitHub from "../../assets/images/github.png";
+import nextjs from "../../assets/images/nextjs.png";
+import kanban from "../../assets/images/kanban.png";
+import docker from "../../assets/images/docker.png";
+import angular from "../../assets/images/angular.png";
+import terraform from "../../assets/images/terraform.png"
 import linux from "../../assets/images/gnulinux-logo.webp"
+import javaScript from "../../assets/images/javascript.png";
+import typeScript from "../../assets/images/typescript.png";
+import styled from "../../assets/images/styled-components.png";
+import dockerCompose from "../../assets/images/docker-compose.png";
+import springFramework from "../../assets/images/spring-framework.png"
 
 const Skills = () => {
   const [showDescription, setShowDescription] = useState();
@@ -28,6 +31,9 @@ const Skills = () => {
     js: "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.",
     typeScript:
       "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.",
+    java: "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela empresa Oracle Corporation.",
+    springFramework: 'O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro "Expert One-on-One: JEE Design e Development". Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle e injeção de dependência.',
+    angular: "Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o construiu.",
     styled:
       "Styled components é uma biblioteca que possibilita escrever códigos CSS dentro do JavaScript. Com ele, você pode criar websites bonitos e funcionais. Além disso, ganhar mais agilidade e precisão no desenvolvimento web.",
     react:
@@ -73,6 +79,21 @@ const Skills = () => {
           src={typeScript}
           onClick={() => setShowDescription(titles.typeScript)}
           title="TypeScript"
+        />
+        <S.Image
+          src={java}
+          onClick={() => setShowDescription(titles.java)}
+          title="Java"
+        />
+        <S.Image
+          src={springFramework}
+          onClick={() => setShowDescription(titles.springFramework)}
+          title="Spring Framework"
+        />
+        <S.Image
+          src={angular}
+          onClick={() => setShowDescription(titles.angular)}
+          title="Angular"
         />
         <S.Image
           src={styled}
