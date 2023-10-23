@@ -6,7 +6,7 @@ import aws from "../../assets/images/aws.png";
 import gcp from "../../assets/images/gcp.png"
 import git from "../../assets/images/git.png";
 import HTML from "../../assets/images/html.png";
-import java from "../../assets/images/java.png";
+import java from "../../assets/images/Java.png";
 import REACT from "../../assets/images/react.png";
 import scrum from "../../assets/images/scrum.png";
 import gitHub from "../../assets/images/github.png";
