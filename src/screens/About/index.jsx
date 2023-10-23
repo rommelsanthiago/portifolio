@@ -73,6 +73,19 @@ const About = () => {
           <S.Timeline>
             <S.Entry>
               <span>
+                <h3>Fullstack Java + Angular</h3>
+                <h4>DIO - 115h</h4>
+                <p>Agosto de 2023</p>
+                <p>Outubro de 2023</p>
+              </span>
+              <S.Description>
+                <b>Santander Bootcamp 2023 - Fullstack Java + Angular</b><br/>
+                Bootcamp da DIO em parceria com o Santander, onde pude aprimorar meu conhecimento em Java e Angular com projetos praticos e desafios de codigo enriquecedores.
+                Foram abordados conteúdos que abrangem desde os princípios de desenvolvimento de software, orientação a objetos, bancos de dados, Spring Boot, Javascript, Typescript, Angular e desenvolvimento web, até mentorias técnicas altamente especializadas.
+              </S.Description>
+            </S.Entry>
+            <S.Entry>
+              <span>
                 <h3>Desenvolvimento Java com Cloud AWS</h3>
                 <h4>DIO - 65h</h4>
                 <p>Agosto de 2023</p>
