@@ -20,7 +20,7 @@ const Contact = () => {
     setValues(data);
     handleClick();
 
-    axios.post(import.meta.env.VITE_API_URL, data)
+    axios.post("https://rommel-api-portifolio.vercel.app/send", data)
       .then(() => {
         showModal();
       })
